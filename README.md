@@ -37,7 +37,7 @@ $ nc -l -p 6666
 ## STATIC mode
 
 Using this operation mode the backdoor try to connects to an hard-coded IP/PORT.  
-In this case, run netcat listening on the hard-coded machine/port:
+In this case, just run netcat listening on the hard-coded machine/port:
 ```bash
  $ nc -l -p [PORT] 
 ```
@@ -103,11 +103,11 @@ This option allow you to see some information about the backdoor:
 
 ```bash
 $ ./prism Inf0
- Version:  	0.5
- Mode:			icmp
- Key:			p455w0rD
- Process name:		[udevd]
- Shell:			/bin/sh
- Detach:		Yes
- Flush Iptables:	No
+ Version: 0.5
+ Mode: icmp
+ Key: p455w0rD
+ Process name: [udevd]
+ Shell: /bin/sh
+ Detach: Yes
+ Flush Iptables: No
 ```
