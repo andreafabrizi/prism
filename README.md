@@ -83,8 +83,18 @@ Example:
 `gcc -DDETACH -DNORENAME -Wall -s -o prism prism.c`
 
 ## Cross Compiling:
-TO DO
+* **Android**  
+Change the shell to */system/bin/sh*  
+`apt-get install gcc-arm-linux-gnueabi`  
+`arm-linux-gnueabi-gcc -DSTATIC -DDETACH -DNORENAME -static -march=armv5 prism.c -o prism`
 
+* **Linux 64bit** (using a 32bit host system)   
+`apt-get install libc6-dev-amd64`  
+`gcc -DDETACH -m64 -Wall -s -o prism prism.c`
+
+* **Linux 32bit** (using a 64bit host system)   
+`apt-get install libc6-dev-i386`  
+`gcc -DDETACH -m32 -Wall -s -o prism prism.c`
 
 ## Backdoor building information
 
