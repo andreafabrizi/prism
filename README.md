@@ -12,7 +12,7 @@ It was fully tested on:
 
 PRISM can works in two different ways: **ICMP** and **STATIC** mode.
 
-## ICMP mode:
+## ICMP mode
 
 Using this operation mode the backdoor waits silently in background for a specific ICMP packet 
 containing the host/port to connect back and a private key to prevent third party access. 
@@ -34,15 +34,15 @@ $ nc -l -p 6666
 * The backdoor will connect back to netcat!
 
 
-## STATIC mode:
+## STATIC mode
 
-Using this operation mode the backdoor try to connects to an hard-coded IP/PORT. 
+Using this operation mode the backdoor try to connects to an hard-coded IP/PORT.  
 In this case, run netcat listening on the hard-coded machine/port:
 ```bash
  $ nc -l -p [PORT] 
 ```
 
-## Features: 
+## Features
 
 * Two operating modes (ICMP and STATIC)
 * Runtime process renaming
@@ -51,7 +51,7 @@ In this case, run netcat listening on the hard-coded machine/port:
 * Written in pure C
 * No library dependencies
 
-## Configuration:
+## Configuration
 
 Before building, you have to configure the backdoor editing the source code.  
 Following the configuration parameters description:
@@ -69,7 +69,7 @@ Following the configuration parameters description:
 *SHELL*:          Shell to execute  
 *PROCESS_NAME*:   Fake process name  
 
-## Building:
+## Building
 
 `gcc <..OPTIONS..> -Wall -s -o prism prism.c`
 
@@ -82,7 +82,7 @@ Available GCC options:
 Example:  
 `gcc -DDETACH -DNORENAME -Wall -s -o prism prism.c`
 
-## Cross Compiling:
+## Cross Compiling
 * **Android**  
 Change the shell to */system/bin/sh*  
 `apt-get install gcc-arm-linux-gnueabi`  
@@ -98,7 +98,7 @@ Change the shell to */system/bin/sh*
 
 ## Backdoor building information
 
-The backdoor ignore any parameter throught the command line, except the "**Inf0**" (the last char is a digit).  
+The backdoor ignore any command line parameter, except the **Inf0** (the last char is a digit).  
 This option allow you to see some information about the backdoor:
 
 ```bash
