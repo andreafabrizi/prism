@@ -1,8 +1,8 @@
-# Prism
+# Prism backdoor
 
-PRISM is an user space stealth reverse shell backdoor. 
+PRISM is an user space stealth reverse shell backdoor. The code is available on [GitHub](https://github.com/andreafabrizi/prism).
 
-It was fully tested on:
+It has been fully tested on:
 
 * **Linux**
 * **Solaris**
@@ -50,6 +50,11 @@ In this case, just run netcat listening on the hard-coded machine/port:
 * Automatic iptables rules flushing
 * Written in pure C
 * No library dependencies
+
+## Get the code
+```
+git clone https://github.com/andreafabrizi/prism.git
+```
 
 ## Configuration
 
